@@ -1,0 +1,46 @@
+{
+    "attachment": {
+        "height": 720,
+        "width": 1280,
+        "picture-link": "https://pbs.twimg.com/ext_tw_video_thumb/1160475986116390918/pu/img/qu8mic_Z6J-4Bupk.jpg:large"
+    },
+    "author": {
+        "account": "LegiaKosz",
+        "is-verified": false,
+        "name": "Legia Kosz",
+        "picture-link": "https://pbs.twimg.com/profile_images/486117136465543168/fSx_rs_a_normal.jpeg"
+    },
+    "date": "2019-08-11T09:00:27+00:00",
+    "link": "https://twitter.com/LegiaKosz/status/1160476056878559232",
+    "network": "twitter",
+    "text": {
+        "markup": [
+            {
+                "length": 13,
+                "link": "https://twitter.com/hashtag/basketballcl?src=hash",
+                "location": 43
+            },
+            {
+                "length": 6,
+                "link": "https://twitter.com/hashtag/plkpl?src=hash",
+                "location": 57
+            },
+            {
+                "length": 13,
+                "link": "https://twitter.com/BasketballCL",
+                "location": 64
+            },
+            {
+                "length": 6,
+                "link": "https://twitter.com/PLKpl",
+                "location": 78
+            },
+            {
+                "length": 26,
+                "link": "https://t.co/7BbLnDcU8J",
+                "location": 85
+            }
+        ],
+        "plain": "Odliczacie ju\u017c podobnie jak \ud83d\udc3b Kazek?  \ud83e\udd14\u23f3\u23f0\ud83c\udfc0 #basketballcl #plkpl @BasketballCL @PLKpl pic.twitter.com/7BbLnDcU8J"
+    }
+}
