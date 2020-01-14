@@ -8,14 +8,39 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
+extension View {
+    public func addBorder<S>(_ content: S, width: CGFloat = 1, cornerRadius: CGFloat) -> some View where S : ShapeStyle {
+        return overlay(RoundedRectangle(cornerRadius: cornerRadius).strokeBorder(content, lineWidth: width))
     }
 }
 
+struct ContentView: View {
+    
+    var feedItems = Bundle.main.decode([FeedItem].self, from: "feedSample2.json")
+//    @State var socialFeedNetworking = SocialFeedNetworking()
+    
+    var body: some View {
+        NavigationView {
+            List(feedItems, id: \.link) { item in
+                
+                    FeedItemView(feedItem: item)
+            }
+            .navigationBarTitle("Social Feed")
+            
+//            List(socialFeedNetworking.feed) { article in
+//                Text(article.author.name)
+//            }.navigationBarTitle("Social Feed")
+        }
+    }
+    
+}
+
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
+
     static var previews: some View {
         ContentView()
+//        ContentView(feedItems: Bundle.main.decode([FeedItem].self, from: "feedSample.json"))
     }
 }
+#endif
